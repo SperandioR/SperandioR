@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
+        }
+
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Exercícios HTML</h1>
+        </header>
+        <nav>
+            <a href='exercicios/teste.html'>00 - teste</a> |
+            <a href='exercicios/texto1.html'>01 - Texto 1</a>   |
+            <a href='exercicios/texto2.html'>02 - Texto 2</a>   |
+            <a href='exercicios/listas.html'>03 - Listas</a>   |
+            <a href='exercicios/listaAninhada.html'>04 - Lista Aninhada</a>   |
+            <a href='exercicios/brincando.html'>05 - brincando</a>   |
+            <a href='exercicios/links.html'>06 - links</a>   |
+            <a href='exercicios/tabelacont.html'>07- Tabela</a>   |
+            <a href='exercicios/form/form.html'>08- Formulário</a>   |
+        </nav>
+        <section id='conteudo'></section>
+        <footer><br>
+            Curso de Web Moderno
+
+        </footer>
+        <script>
+            document.querySelectorAll('a').forEach(link => {            
+                link.onclick = function(e) {
+                    e.preventDefault()
+                   
+                    const conteudo = document.getElementById('conteudo')
+                    fetch(link.href)
+                        .then(resp => resp.text())
+                        .then(html => conteudo.innerHTML = html)
+                }
+
+            })
+        </script>
+    </body>
+</html>
+
+<!-- Section: Por exemplo, um menu de navegação deve estar dentro de um elemento <nav>, mas uma lista de resultados de pesquisa ou a 
+exibição de um mapa e seus controles não possuem elementos específicos, e podem ser colocados dentro de uma <section>. -->
+
+<!--document.querySelectorAll O método querySelectorAll () retorna todos os elementos no documento 
+    que correspondem a um seletor (es) CSS especificado, como um objeto NodeList estático.-->
+
+    <!--O que eu quero é clicar nesse link.
+Ele pegue ele faça um requisição Ajax pegue esse conteúdo e jogue dentro da divisão de acesso que eu
+coloquei.-->
+

@@ -1,0 +1,53 @@
+<Table> <!-- coloca borda -->
+    <caption>Produtos</caption><!-- <capition>  (ou Elemento HTML Subtitulo de Tabela) representa o título de uma tabela. -->
+        <thead><!-- <thead> O elemento HTML define um conjunto de linhas definindo o cabeçalho das colunas da tabela. -->
+            <tr><!-- O elemento HTML define uma linha de células em uma tabela.  -->
+                <th>Produto</th> <!-- O elemento HTML <th>  define uma célula cabeçalho do grupo de células de sua tabela. -->
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+
+        </thead>
+
+        <tbody><!-- ( elementos), indicando que elas compõem o corpo da tabela () -->
+            <tr>
+                <td>Ipad</td><!--  <td> O elemento HTML define uma célula de uma tabela que contém dados. Ele participa do modelo de tabela .-->
+                <td>3269,00</td>
+                <td>5</td>   
+                <td>16445,00</td>   
+            
+            </tr>
+            <tr>
+                <td>Sansung S9</td>
+                <td>2649,00</td>
+                <td>8</td>
+                <td>2192,00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" >Total </td>  <!-- <condspan> Mescla 3 células dentro de uma tabela, rowspan mescla 2 linhas dentro de uma tabela. -->
+                <td>37637,00</td>
+            </tr>
+    
+        </tfoot>
+</Table>
+
+<style>
+    table {border-collapse:collapse ;}
+       th,td {padding: 10px;}
+       thead tr {
+           border-bottom: solid 3px rgb(88, 224, 202); }
+
+        tbody tr:hover {/* aplicação de classe CSS no tr (table rom) ao passar o cursor em cima das linhas*/
+            background-color:rgb(182, 191, 201);
+        }
+        tfoot {background-color: brown;
+        color: chartreuse;
+        font-weight: bold;
+        
+        }
+       
+</style>
