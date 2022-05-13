@@ -2,8 +2,30 @@
 
 <form action="http://localhost:3003/usuarios" method="post">
     <INPUT type="text" name="nome">
-    <button>Incluir</button>
+    <input type="password" name="senha">
+    <textarea name="bio" cols="30" rows="10"> </textarea>
+    <div>
+        <input type="radio" name="tipo" value="Admin">Admin
+        <input type="radio" name="tipo"value="Regular">Regular
+        <input type="radio" name="tipo"value="Professor">Professor
+        
+    </div>
+
+
+ <button> Incluir </button>
 
 </form>
 
 
+<style>
+    input, 
+    textarea { 
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+        input[type=radio] {
+        display: inline;
+    }
+
+</style>
