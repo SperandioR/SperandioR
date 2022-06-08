@@ -1,28 +1,48 @@
 <h1>Formulário</h1>
+<!-- O formulário HTML é um formulário de preenchimento de dados ou que resulta em uma ação desejada utilizando a linguagem de marcação HTML. 
+    É formado por um ou mais widgets. Esses widgets são campos de textos, caixas de seleção, botões, radio buttons e checkboxes utilizando ferramentas do próprio HTML. 
+    Dessa forma, o usuário pode interagir com a página ao executar ações através desses formulários. -->
 
-<form method="POST">
-    <input type="hidden" name="id" value="3">
+<form method="POST">  <!-- O formulário HTML é representado pela tag de abertura <form> e a de fechamento </form>. 
+    Dentro dessas tags, serão colocados todos os elementos que compõem este formulário. -->
+    <!-- Para a tag <form> podem ser atribuídos o atributo <method> e o atributo action. -->
+    <!-- O atributo method define o método HTTP com que o formulário HTML irá lidar com os dados recebidos. 
+    São eles: o método GET e o método "POST". -->
+    
+    <!-- Elementos de formulário HTML -->
+    <input type="hidden" name="id" value="3"> <!-- <input> – Define um campo de entrada de dados; -->
     <input type="text" name="name">
     <input type="password" name="senha">
-    <textarea name="bio" cols="30" rows="10"></textarea>
+    <textarea name="bio" cols="30" rows="10"></textarea><!-- <textarea> – Define uma área de texto, podendo conter diversas linhas de texto; -->
     <div>
-        <input type="radio" name="tipo" value="admin"> Admin
+        <input type="radio" name="tipo" value="admin"> Admin<!-- Outro atributo importante para a tag <input> é o atributo name, que define um nome para o campo de entrada. -->
         <input type="radio" name="tipo" value="regular"> Regular
         <input type="radio" name="tipo" value="professor"> Professor
     </div>
+<!-- A tag <input> é uma das mais utilizadas dentro de um formulário HTML e considerada a principal. 
+Esta tag representa os campos de entrada de dados de um formulário. 
+Existem diversos tipos, principalmente após a atualização do HTML para a versão HTML5, que trouxe diversos tipos novos de <input>.
+
+O atributo mais importante da tag <input> é o atributos type. Esse atributo representa o tipo de campo de entrada ao qual essa tag pertence e como ele se comporta. 
+Por tanto, declarar o atributo type é um pré-requisito para utilizar a tag <input>.
+ 
+Este recurso é muito útil para conseguir identificar os campos através dos métodos GET e POST.
+
+Há também outro atributo que é muito utilizado, o atributo value. Esse atributo define um valor inicial para o campo de entrada. -->
+
     <div>
         <input type="checkbox" name="ativo"> Ativo
     </div>
 
     <select name="estado">
-        <option value="">Selecione</option>
-        <option value="ac">Acre</option>
+        <option value="">Selecione</option><!-- <option> – Define uma lista de opções dentro de um drop-down; -->
+        <option value="ac">Acre</option> <!-- O atributo value. Esse atributo define um valor inicial para o campo de entrada. -->
         <option value="ba">Bahia</option>
         <option value="ce">Ceará</option>
     </select>
 
     <select name="interesses" multiple size="6">
-        <option value="js">Javascript</option>
+        <option value="js">Javascript</option><!-- <option> – Define uma lista de opções dentro de um drop-down; -->
         <option value="java">Java</option>
         <option value="php">PHP</option>
         <option value="python">Python</option>
@@ -47,3 +67,51 @@
         display: inline;
     }
 </style>
+
+<!-- Os métodos GET e POST
+Para entender a diferença entre esses dois métodos, é necessário compreender como funcionam as requisições HTTP. 
+De uma forma resumida, sempre que você acessa um recurso através da web, o navegador envia uma requisição através da URL. 
+Portanto o HTTP é uma requisição que consiste em duas partes, o cabeçalho e o corpo. O cabeçalho contém um conjunto de metadados globais envolvendo os recursos do navegador. 
+Já o corpo pode conter informações necessárias para o servidor conseguir processar a solicitação anterior. -->
+
+<!-- O método POST
+O método POST é utilizado no navegador para conversar com o servidor. Os dados são enviados ao servidor através do corpo da solicitação HTTP. 
+Também é realizada uma solicitação de resposta. Portanto, é como se falássemos ao servidor “Servidor, verifique esses dados e me retorne um resultado adequado”. 
+Dessa forma, ao enviar um formulário através do método POST, os dados serão anexados ao corpo da solicitação HTTP.
+
+Diferentemente do método GET, explicado anteriormente, o método POST não inclui o corpo na URL. Portanto, os dados enviados não ficarão visíveis na URL.
+
+Vejamos então, algumas observações a respeito do método POST:
+
+Anexa dados de formulário dentro do corpo da solicitação de HTTP. Portanto, os dados não são mostrados na URL;
+Não tem limitações de tamanho;
+Os envios de formulários com o POST não podem ser marcados. -->
+
+
+<!-- Portanto, vejamos abaixo os possíveis valores do atributo type da tag <input>: -->
+
+
+<!-- 
+Type:	Descrição	HTML5?
+button:	Define um botão	–
+checkbox:	Define uma caixa de checagem	–
+color:	Define uma caixa de cores	–
+date:	Define um campo de data	☑
+datetime-local	Define um campo de data e horário	☑
+email:	Define um campo de e-mail	☑
+file:	Define uma campo para upload de arquivos	–
+hidden:	Define um campo oculto	–
+image:	Define uma imagem como botão de envio do formulário HTML	–
+month:	Define um controle de mês e ano	☑
+number:	Define um campo de intervalo de número	☑
+password:	Define um campo de senha (mascarando-a)	–
+radio:	Define um campo de opção (radio)	–
+range:	Define um controle de intervalo	☑
+reset:	Define um botão para reiniciar aos valores iniciais	–
+search:	Define um campo de pesquisa	☑
+submit:	Define um botão de envio do formulário HTML	–
+tel	Define um campo de telefone	☑
+text:	Define um campo de texto	–
+time:	Define um campo de controle de horário	☑
+url:	Define um campo de URL	☑
+week:	Define um campo de controle de semana	☑ -->
