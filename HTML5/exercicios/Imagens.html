@@ -1,14 +1,25 @@
+<!-- Para inserir uma imagem no HTML basta utilizar a tag <img> com o atributo src. 
+Ou seja: o atributo src, ou source, vai conter a url da imagem que será inserida. -->
+
 <p>
     <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
     alt="Muro da Cidade"
-    width="513" height="342"
+    width="513" height="342"  
     title="Muro da Cidade por Tarso Bessa">
 </p>
+<!-- alt="Texto alternativo para descrever minha imagem"> -->
+<!-- Além do atributo src, a tag <img> possui outros atributos que complementam a sua estrutura: podemos, por exemplo, incluir um atributo de título para a imagem. 
+Esse título será mostrado apenas quando o usuário passar o mouse sobre a imagem.  Portanto, para incluir o título a imagem, basta chamar pelo atributo title=”…”.  -->
+<!-- height (altura) e width (largura). -->
 <p>
     
     <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
         alt="Intro Cod3r" height="342">
 </p>
+<!-- alt="Texto alternativo para descrever minha imagem"> -->
+<!-- Da mesma forma, também podemos incluir a nossa imagem, um texto alternativo. 
+Esse texto será mostrado no local da imagem caso a URL da imagem esteja errada, a imagem não esteja em um formato suportado ou até que a imagem seja baixada. 
+Para incluir o texto alternativo basta chamar pelo atributo alt=”…”.  -->
 
 <p class="circular">
     <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
@@ -16,15 +27,60 @@
 
 </p>
 
+<P class="texto">
+    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+    alt="Avatar" height="50">
+    asdfasdfasdfasdfasdfasdfasdfasdfasdf <br>
+    adfasdfasdfasdfasdfasdfasdfasdfasdfasdf<br>
+    sdfasdgagahrfadrfhadhadfgadfgadfgasdfgafsd
 
+</P>
+<p class="cidade"></p>
 
+<p>
+    <picture>
+        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+            media="(min-width: 600px">
+        <img src="http://files.code3r.com.br/curso-web/logo-estreita.png" alt="Logo">
+    </picture>
+
+</p>
+<!-- Agora digamos que temos uma pasta public_html onde dentro dela temos as pastas imagens e pages, 
+onde a nossa página esta dentro da pasta pages e a imagem está dentro da pasta imagens. 
+Dessa forma, utilizamos ../ para poder voltar uma pasta e assim entrar na pasta que queremos. 
+exemplo: <img src="../imagens/imagem.jpg">-->
 
 <style>
     .circular {
         width: 513px;
-        background-color: rgba(16, 3, 46, 0.322);
+        background-color: rgba(135, 214, 210, 0.322);
     }
-
+    .texto img { 
+        width: 50px;/* A propriedade CSS <width> determina a largura da área de conteúdo de um elemento.  */
+        margin-right: 10px;  /* margin-right é uma propriedade CSS que define a área da margem no lado direito de um elemeto*/
+        float: left;   
+    }
+    .cidade {
+        width: 513px;
+        height: 342px;
+        background-image: url('http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQHUae_ly1yBwrpjdJA7Ij3U1U_T-KTquRvgDNn_PkNbUWIcqWU1IM5oBLM2BVLevIK');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    /* Exemplos:
+    margin-right: 1em;
+    margin-right: 10%;
+    margin-right: 10px;
+    margin-right: 0;
+    */
+/* A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito 
+ou esquerdo do seu containêr, onde textos  e elementos em linha irão se posicionar ao seu redor. */
 
 
 </style>
+
+<!-- No HTML, a tag responsável pela inserção de imagens é a tag <img>. 
+Porém, o HTML tecnicamente não faz a inclusão da imagem em si, o que ele faz é linkar a imagem para a página, de forma que ela seja aberta como se estivesse inserida na mesma, parecido com o processo da tag link <a>. 
+Dessa forma, podemos adicionar imagens tanto localmente quanto de forma global, ou seja, através de uma URL externa ao domínio principal. 
+Além disso, também é importante reforçar que a tag <img> não possui uma tag de fechamento e traz consigo o padrão de display inline-block do CSS além de ajuste de largura e altura no padrão automático. -->
