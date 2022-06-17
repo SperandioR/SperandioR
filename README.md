@@ -6,6 +6,8 @@
 - 😄 Pronouns: ele/dele
 - ⚡  Desenvolver um aplicativo  para os futuros Químicos.
 
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=SperandioR)](https://github.com/SperandioR)
+
 
 <div align="center">
 		<a href=" https://github.com/SperandioR">
