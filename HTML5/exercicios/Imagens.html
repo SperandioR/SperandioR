@@ -1,50 +1,49 @@
 <!-- Para inserir uma imagem no HTML basta utilizar a tag <img> com o atributo src. 
 Ou seja: o atributo src, ou source, vai conter a url da imagem que será inserida. -->
-
-<p>
-    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
-    alt="Muro da Cidade"
-    width="513" height="342"  
-    title="Muro da Cidade por Tarso Bessa">
-</p>
+<div wm-slider>
+    <p>
+     <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+        alt="Muro da Cidade"
+        width="513" height="342"  
+        title="Muro da Cidade por Tarso Bessa">
+    </p>
 <!-- alt="Texto alternativo para descrever minha imagem"> -->
 <!-- Além do atributo src, a tag <img> possui outros atributos que complementam a sua estrutura: podemos, por exemplo, incluir um atributo de título para a imagem. 
 Esse título será mostrado apenas quando o usuário passar o mouse sobre a imagem.  Portanto, para incluir o título a imagem, basta chamar pelo atributo title=”…”.  -->
 <!-- height (altura) e width (largura). -->
-<p>
-    
-    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+    <p>
+     <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
         alt="Intro Cod3r" height="342">
-</p>
+    </p>
 <!-- alt="Texto alternativo para descrever minha imagem"> -->
 <!-- Da mesma forma, também podemos incluir a nossa imagem, um texto alternativo. 
 Esse texto será mostrado no local da imagem caso a URL da imagem esteja errada, a imagem não esteja em um formato suportado ou até que a imagem seja baixada. 
 Para incluir o texto alternativo basta chamar pelo atributo alt=”…”.  -->
 
-<p class="circular">
-    <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
-    alt="Rio de Janeiro" height="342">
+    <p class="circular">
+     <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
+        alt="Rio de Janeiro" height="342">
 
-</p>
+    </p>
 
-<P class="texto">
-    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
-    alt="Avatar" height="50">
-    asdfasdfasdfasdfasdfasdfasdfasdfasdf <br>
-    adfasdfasdfasdfasdfasdfasdfasdfasdfasdf<br>
-    sdfasdgagahrfadrfhadhadfgadfgadfgasdfgafsd
+    <P class="texto">
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+            alt="Avatar" height="50">
+            asdfasdfasdfasdfasdfasdfasdfasdfasdf <br>
+            adfasdfasdfasdfasdfasdfasdfasdfasdfasdf<br>
+            sdfasdgagahrfadrfhadhadfgadfgadfgasdfgafsd
+    </P>
+        <p class="cidade"></p>
+    <p>
 
-</P>
-<p class="cidade"></p>
-
-<p>
-    <picture>
-        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
             media="(min-width: 600px">
-        <img src="http://files.code3r.com.br/curso-web/logo-estreita.png" alt="Logo">
+            <img src="http://files.code3r.com.br/curso-web/logo-estreita.png" alt="Logo">
     </picture>
 
-</p>
+    </p>
+</div>
 <!-- Agora digamos que temos uma pasta public_html onde dentro dela temos as pastas imagens e pages, 
 onde a nossa página esta dentro da pasta pages e a imagem está dentro da pasta imagens. 
 Dessa forma, utilizamos ../ para poder voltar uma pasta e assim entrar na pasta que queremos. 
@@ -76,11 +75,60 @@ exemplo: <img src="../imagens/imagem.jpg">-->
     */
 /* A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito 
 ou esquerdo do seu containêr, onde textos  e elementos em linha irão se posicionar ao seu redor. */
-
-
 </style>
 
 <!-- No HTML, a tag responsável pela inserção de imagens é a tag <img>. 
 Porém, o HTML tecnicamente não faz a inclusão da imagem em si, o que ele faz é linkar a imagem para a página, de forma que ela seja aberta como se estivesse inserida na mesma, parecido com o processo da tag link <a>. 
 Dessa forma, podemos adicionar imagens tanto localmente quanto de forma global, ou seja, através de uma URL externa ao domínio principal. 
 Além disso, também é importante reforçar que a tag <img> não possui uma tag de fechamento e traz consigo o padrão de display inline-block do CSS além de ajuste de largura e altura no padrão automático. -->
+
+<script>
+    function mover(elem, inicio, fim, passo, callback) {
+        const novoInicio = inicio - passo
+        if(novoInicio >= fim) {
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+        } else {
+            callback()
+        }
+    }
+    const p = document.querySelector('[wm-slider] > p')
+    p.style.display = 'block'
+    mover (p, 1500, 400, 5, () => {
+        console.log('Terminou!!!')
+    })
+
+    function slider() {
+        const elementos = document.querySelectorAll('[wm-slider] > p')
+        const slides = Array.from(elementos)
+        exibirSlide(slides, slides[0])
+    }
+
+    function exibirSlide(slides, slide) {
+        slide.style.display = 'block'
+
+        const inicio = innerWidth
+        const fim = -slide.clientWidth
+
+        slide.style.left = `${inicio}px`
+
+        mover(slide, inicio, fim, 5, () => {
+            slide.style.display = 'none'
+            exibirSlide(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual) {
+        const i = lista.indexOf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0]
+    }
+
+    slider()
+</script>
+<!-- tag <if> = Se, else = Senao. 
+    Então o else if é "senao se" ou seja se a condição anterior não for verdadeira verifique uma nova condição.  -->
+
+
+
+
+
