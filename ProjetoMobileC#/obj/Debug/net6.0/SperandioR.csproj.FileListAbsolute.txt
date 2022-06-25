@@ -1,0 +1,15 @@
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.csproj.AssemblyReference.cache
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.AssemblyInfoInputs.cache
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.AssemblyInfo.cs
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.csproj.CoreCompileInputs.cache
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\bin\Debug\net6.0\SperandioR.exe
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\bin\Debug\net6.0\SperandioR.deps.json
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\bin\Debug\net6.0\SperandioR.runtimeconfig.json
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\bin\Debug\net6.0\SperandioR.dll
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\bin\Debug\net6.0\SperandioR.pdb
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.dll
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\refint\SperandioR.dll
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.pdb
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\SperandioR.genruntimeconfig.cache
+C:\Users\Usuario(a) Master\Desktop\RepositórioSystem\SperandioR\ProjetoMobileC#\obj\Debug\net6.0\ref\SperandioR.dll
