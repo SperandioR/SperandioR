@@ -1,7 +1,7 @@
 ### Olá! Eu sou Rodrigo👋
 
 
-- 🔭 Em transição de carreira para a área de Técnologia.
+- 🔭 Em transição de carreira para a área de Tecnologia.
 - 🌱 Cursando  Sistemas de Informção 3°Sem.
 - 😄 Pronouns: ele/dele
 - ⚡  Desenvolver um aplicativo  para os futuros Químicos.
