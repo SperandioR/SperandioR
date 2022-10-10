@@ -6,9 +6,11 @@
 - 😄 Pronouns: ele/dele
 - ⚡  Desenvolver um aplicativo  para os futuros Químicos.
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=SperandioR&color=yellow" alt="Profile views" /> </p>
 
-	[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=SperandioR&theme=neon-dark&hide_border=falso&date_format=j%20M%5B%20Y%5D&locale=pt-br)](https://git.io/streak-stats) 
-
+	
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=SperandioR&theme=neon-dark&hide_border=falso&date_format=j%20M%5B%20Y%5D&locale=pt-br)](https://git.io/streak-stats) 
+	
 <div align="center">
 		<a href=" https://github.com/SperandioR">
 		<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SperandioR&show_icons=true&theme=vision-friendly-dark&include_all_commits=true&count_private=true"/>
