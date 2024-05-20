@@ -2,7 +2,7 @@
 
 
 - 🔭 Em transição de carreira para a área de Tecnologia da Informação.
-- 🌱 Cursando  Sistemas de Informção 5°Sem.
+- 🌱 Cursando  Sistemas de Informção 6°Sem.
 - 😄 Pronouns: ele/dele
 - ⚡ Software Developer
 
