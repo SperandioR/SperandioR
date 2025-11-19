@@ -2,9 +2,9 @@
 
 
 - 🔭 Em transição de carreira para a área de Tecnologia da Informação.
-- 🌱 Cursando  Sistemas de Informção 7°Sem.
+- 🌱 Sistemas de Informção
 - 😄 Pronouns: ele/dele
-- ⚡ Software Developer
+- ⚡ Analista de Dados
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=SperandioR&color=yellow" alt="Profile views" /> </p>
 
