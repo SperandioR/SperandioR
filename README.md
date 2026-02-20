@@ -1,10 +1,24 @@
 ### Olá! Eu sou Rodrigo👋
 
+- 📊 Transformando dados em decisões
 
-- 🔭 Em transição de carreira para a área de Tecnologia da Informação.
-- 🌱 Sistemas de Informção
-- 😄 Pronouns: ele/dele
-- ⚡ Analista de Dados
+Sou profissional em transição de carreira para a área de Dados, formado em Sistemas de Informação e com pós-graduação em Ciência de Dados e Big Data Analytics em andamento.
+
+🚀 Sobre mim
+
+📊 Foco em Análise de Dados e Business Intelligence
+
+🗄️ Experiência prática com SQL e modelagem de dados
+
+📈 Desenvolvimento de dashboards em Power BI
+
+📚 Aplicando conceitos de análise e visualização em projetos práticos
+
+🎯 Buscando oportunidade de Estágio em Dados ou BI
+
+🛠️ Tecnologias e Ferramentas
+
+SQL | Power BI | MySQL | Modelagem de Dados | Excel
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=SperandioR&color=yellow" alt="Profile views" /> </p>
 
