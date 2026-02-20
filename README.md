@@ -62,10 +62,10 @@
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Contribution Activity
 
 <p align="center">
-  <img src="https://github.com/SperandioR/SperandioR/blob/output/github-contribution-grid-snake.svg"/>
+  <img src="https://github.com/SperandioR/SperandioR/blob/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
