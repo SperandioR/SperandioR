@@ -29,12 +29,12 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=SperandioR&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SperandioR&layout=compact&theme=tokyonight"/>
+  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=SperandioR&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&cache_seconds=86400"/>
+  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SperandioR&layout=compact&theme=tokyonight&cache_seconds=86400"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=SperandioR&theme=tokyonight"/>
+  <img src="https://streak-stats.demolab.com?user=SperandioR&theme=tokyonight"/>
 </p>
 
 ---
