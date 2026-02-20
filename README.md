@@ -29,7 +29,8 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=SperandioR&theme=tokyonight&hide_border=true" />
+  <img height="160em" src="https://streak-stats.demolab.com?user=SperandioR&theme=tokyonight&hide_border=true"/>
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SperandioR&theme=github_dark"/>
 </p>
 
 ---
